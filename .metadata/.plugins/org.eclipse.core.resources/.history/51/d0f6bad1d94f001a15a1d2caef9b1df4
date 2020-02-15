@@ -1,0 +1,26 @@
+package lv.alina.employee;
+
+public abstract class SalaryEmployee extends Employee {
+	
+	public SalaryEmployee(String name, Integer bankAccount, Double grossWage) {
+		super(name, bankAccount, grossWage);
+	}
+
+	@Override
+	public Double grossPayment() {
+		return grossWage;
+	}
+
+	@Override
+	public void giveBonus(Double percentage) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected Double doCurrentBonus() {
+		// TODO Auto-generated method stub
+		return super.doCurrentBonus();
+	}
+
+}
